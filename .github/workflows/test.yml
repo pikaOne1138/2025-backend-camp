@@ -71,12 +71,12 @@ jobs:
       DB_DATABASE: test
       DB_PASSWORD: test
       DB_HOST: localhost
-      DB_PORT: 5432
+      DB_PORT: 25432
     services:
       postgres:
         image: postgres:17-alpine
         ports:
-          - 5432:5432
+          - 25432:5432
         env:
           POSTGRES_USER: ${{ env.DB_USERNAME }}
           POSTGRES_PASSWORD: ${{ env.DB_PASSWORD }}
